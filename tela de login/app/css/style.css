@@ -1,0 +1,48 @@
+/* card principal */
+.container {
+    background: rgba(151, 151, 151, 0.096);
+    border: 6px double rgb(199, 199, 199);
+    border-radius: 2rem;
+    padding: 4rem;
+}
+
+.container button {
+    font-weight: 200;
+    font-size: 20px;
+    padding-inline-start: 10%;
+    padding-inline-end: 10%;
+}
+
+/*  display:grid ou flex para deixar organizado */ 
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-container h1 {
+    text-decoration:underline;
+    color: aliceblue;
+}
+
+/* conteudo do card*/
+.card-components {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-components label,
+.card-components input {
+ margin-top: 10px;   
+ color: aliceblue;
+}
+
+.card-components input {
+    background-color: rgba(0, 0, 0, 0.445);
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+}
+
