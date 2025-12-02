@@ -4,6 +4,7 @@
     border: 6px double rgb(199, 199, 199);
     border-radius: 2rem;
     padding: 4rem;
+    box-shadow: 0 0 200px rgb(202, 161, 255);
 }
 
 .container img {height: 80px;}
@@ -11,11 +12,13 @@
 .container button {
     font-weight: 200;
     font-size: 20px;
-    padding-inline-start: 20%;
-    padding-inline-end: 20%;
+    padding-inline-start: 33%;
+    padding-inline-end: 32%;
     border-radius: 5px;
     border: none;
 }
+
+.card-container button:hover {cursor: pointer;}
 
 /*  display:grid ou flex para deixar organizado */ 
 .card-container {
@@ -32,7 +35,7 @@
 }
 
 .card-container a {
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -55,3 +58,4 @@
     border: none;
 }
 
+#Login a {color: black;}
