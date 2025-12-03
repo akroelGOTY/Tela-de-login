@@ -20,6 +20,17 @@
   border: none;
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 2rem;
+    box-shadow: 0 0 20px rgb(90, 41, 226);
+  }
+
+  .container button {
+    font-weight: 00;
+  }
+}
+
 .card-container button:hover {
   cursor: pointer;
 }
@@ -74,28 +85,38 @@
   background: rgba(151, 151, 151, 0.096);
   border: 1px solid rgb(199, 199, 199);
   border-radius: 2rem;
-  padding: 2rem;
+  padding: 1rem;
   box-shadow: 0 0 200px rgb(202, 161, 255);
 }
 
+@media screen and (max-width: 768px) {
+  .Login-With {
+    box-shadow: 0 0 20px rgb(98, 0, 255);
+    width: 15rem;
+  }
+}
 .components-btn {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 5px;
 }
 
 .components-btn h1 {
-    color: aliceblue;
-    font-size: 20px;
-    text-align: center;
+  color: aliceblue;
+  font-size: 20px;
+  text-align: center;
 }
 
 .components-btn button {
-font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   border: none;
   border-radius: 12px;
-  padding: 5px 80px;
-  font-size: 30px;
+  padding: 5px 40px;
+  font-size: 20px;
   background-color: rgba(0, 0, 0, 0.384);
   color: aliceblue;
+}
+
+.components-btn button {
+  cursor: pointer;
 }
