@@ -1,0 +1,151 @@
+/* reset.css
+   Reset simples e moderno — remove margens, paddings,
+   define box-sizing, normaliza elementos típicos e
+   melhora acessibilidade básica.
+*/
+
+/* 1) Box sizing: inclui padding/border no tamanho total */
+html {
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* 2) Remover margens/paddings e normalizar fontes */
+body, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, figure, dl, dd, ol, ul, li,
+fieldset, legend, textarea, input, button {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+/* 3) Base do body */
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+    background: #fff;
+    color: #000;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+                 Arial, "Noto Sans", "Liberation Sans", "Apple Color Emoji",
+                 "Segoe UI Emoji", "Segoe UI Symbol";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* 4) Imagens e mídia responsiva */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 5) Elementos de lista */
+ul, ol {
+    list-style: none;
+}
+
+/* 6) Links */
+a {
+    background-color: transparent;
+    color: inherit;
+    text-decoration: none;
+}
+a:focus, a:active {
+    outline: none;
+}
+
+/* 7) Tabelas */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 8) Formulários: entradas e botões */
+button, input, select, textarea {
+    font: inherit;
+    color: inherit;
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+}
+
+/* Restaurar estilos acessíveis quando necessário */
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/* 9) Fieldset e legend */
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+legend {
+    padding: 0;
+}
+
+/* 10) Recalibrar headings e text elements */
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* 11) Preformatado */
+pre, code, kbd, samp {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono",
+                 "Droid Sans Mono", "Courier New", monospace;
+    font-size: 1em;
+}
+
+/* 12) Redefinir aparência dos controles de número em WebKit */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* 13) Desabilitar auto-fill styling (Chrome) */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px transparent inset;
+    box-shadow: 0 0 0 1000px transparent inset;
+}
+
+/* 14) Focus visível acessível padrão (customizável) */
+:focus {
+    outline: 2px solid Highlight;
+    outline-offset: 2px;
+}
+
+/* 15) Redefinir elementos semânticos */
+main {
+    display: block;
+}
+
+/* 16) Helper utilities básicos (opcionais) */
+.hidden {
+    display: none !important;
+}
+.visually-hidden {
+    position: absolute !important;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0 0 0 0);
+    white-space: nowrap; border: 0;
+}
+
+/* 17) Touch adjustments */
+button, a, input, textarea {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    touch-action: manipulation;
+}
